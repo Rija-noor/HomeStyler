@@ -1,0 +1,8 @@
+[
+  { "id": "sofa1", "title": "Luxe Velvet Sofa", "description": "Plush velvet with modern style.", "price": 1200, "rating": 4.8, "reviews": 35, "image": "assets/images/product.img/Luxe Velvet Sofa.jpg" },
+  { "id": "sofa2", "title": "Minimalist Grey Sofa", "description": "Compact and stylish comfort.", "price": 950, "rating": 4.6, "reviews": 28, "image": "assets/images/product.img/Minimalist Grey Sofa.jpg" },
+  { "id": "sofa3", "title": "Recliner Sofa", "description": "Ultimate relaxation design.", "price": 1400, "rating": 4.7, "reviews": 22, "image": "assets/images/product.img/Recliner Sofa.jpg" },
+  { "id": "sofa4", "title": "Mid-century Sofa", "description": "Retro charm with comfort.", "price": 1100, "rating": 4.5, "reviews": 18, "image": "assets/images/product.img/Mid-century Sofa.jpg" },
+  { "id": "sofa5", "title": "Sectional Sofa", "description": "Spacious and modular seating.", "price": 1600, "rating": 4.9, "reviews": 40, "image": "assets/images/product.img/Sectional Sofa.jpg" },
+  { "id": "sofa6", "title": "Fabric Loveseat", "description": "Cozy 2-seater for small spaces.", "price": 800, "rating": 4.4, "reviews": 15, "image": "assets/images/product.img/Fabric Loveseat.jpg" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "kitchen1", "title": "Modern White Cabinets", "description": "Sleek storage solution.", "price": 1200, "rating": 4.8, "reviews": 21, "image": "assets/images/product.img/Modern White Cabinets.jpg" },
+  { "id": "kitchen2", "title": "Wood Finish Cabinets", "description": "Warm and classic style.", "price": 1100, "rating": 4.7, "reviews": 18, "image": "assets/images/product.img/Wood Finish Cabinets.jpg" },
+  { "id": "kitchen3", "title": "Glass Door Cabinets", "description": "Display your best dishes.", "price": 1250, "rating": 4.6, "reviews": 15, "image": "assets/images/product.img/Glass Door Cabinets.jpg" },
+  { "id": "kitchen4", "title": "Matte Black Cabinets", "description": "Bold and modern finish.", "price": 1300, "rating": 4.9, "reviews": 22, "image": "assets/images/product.img/Matte Black Cabinets.jpg" },
+  { "id": "kitchen5", "title": "Open Shelf Cabinets", "description": "Easy access storage.", "price": 1000, "rating": 4.4, "reviews": 12, "image": "assets/images/product.img/Open Shelf Cabinets.jpg" },
+  { "id": "kitchen6", "title": "Two-Tone Cabinets", "description": "Chic contrasting colors.", "price": 1280, "rating": 4.5, "reviews": 14, "image": "assets/images/product.img/Two-Tone Cabinets.jpg" }
+]

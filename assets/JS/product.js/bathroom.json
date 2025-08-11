@@ -1,0 +1,8 @@
+[
+  { "id": "bath1", "title": "Vanity with Sink", "description": "Compact modern design.", "price": 800, "rating": 4.6, "reviews": 18, "image": "assets/images/product.img/Vanity with Sink.jpg" },
+  { "id": "bath2", "title": "Glass Shower Enclosure", "description": "Elegant and spacious.", "price": 1400, "rating": 4.8, "reviews": 25, "image": "assets/images/product.img/Glass Shower Enclosure.jpg" },
+  { "id": "bath3", "title": "Freestanding Bathtub", "description": "Luxury bath experience.", "price": 1700, "rating": 4.9, "reviews": 30, "image": "assets/images/product.img/Freestanding Bathtub.jpg" },
+  { "id": "bath4", "title": "Wall-mounted Toilet", "description": "Minimalist and space-saving.", "price": 600, "rating": 4.5, "reviews": 15, "image": "assets/images/product.img/Wall-mounted Toilet.jpg" },
+  { "id": "bath5", "title": "LED Mirror", "description": "Bright and functional.", "price": 350, "rating": 4.7, "reviews": 20, "image": "assets/images/product.img/LED Mirror.jpg" },
+  { "id": "bath6", "title": "Marble Countertop", "description": "Premium polished finish.", "price": 900, "rating": 4.8, "reviews": 16, "image": "assets/images/product.img/Marble Countertop.jpg" }
+]

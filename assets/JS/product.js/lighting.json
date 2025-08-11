@@ -1,0 +1,8 @@
+[
+  { "id": "light1", "title": "Modern Chandelier", "description": "Elegant centerpiece for ceilings.", "price": 650, "rating": 4.7, "reviews": 22, "image": "assets/images/product.img/Modern Chandelier.jpg" },
+  { "id": "light2", "title": "Flush Mount Light", "description": "Sleek low-profile lighting.", "price": 300, "rating": 4.5, "reviews": 15, "image": "assets/images/product.img/Flush Mount Light.jpg" },
+  { "id": "light3", "title": "Pendant Trio", "description": "Stylish hanging set of three.", "price": 480, "rating": 4.6, "reviews": 18, "image": "assets/images/product.img/Pendant Trio.jpg" },
+  { "id": "light4", "title": "Crystal Ceiling Light", "description": "Sparkling luxury design.", "price": 800, "rating": 4.9, "reviews": 25, "image": "assets/images/product.img/Crystal Ceiling Light.jpg" },
+  { "id": "light5", "title": "Industrial Pendant", "description": "Metal finish with vintage touch.", "price": 420, "rating": 4.4, "reviews": 12, "image": "assets/images/product.img/Industrial Pendant.jpg" },
+  { "id": "light6", "title": "LED Panel Light", "description": "Bright and energy efficient.", "price": 260, "rating": 4.3, "reviews": 10, "image": "assets/images/product.img/LED Panel Light.jpg" }
+]

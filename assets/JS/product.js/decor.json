@@ -1,0 +1,8 @@
+[
+  { "id": "decor1", "title": "Persian Style Rug", "description": "Traditional woven elegance.", "price": 300, "rating": 4.8, "reviews": 20, "image": "assets/images/product.img/images decor1.jpg" },
+  { "id": "decor2", "title": "Shaggy Area Rug", "description": "Soft and cozy texture.", "price": 250, "rating": 4.6, "reviews": 18, "image": "assets/images/product.img/Shaggy Area Rug.jpg" },
+  { "id": "decor3", "title": "Geometric Pattern Rug", "description": "Bold design for modern homes.", "price": 270, "rating": 4.5, "reviews": 15, "image": "assets/images/product.img/Geometric Pattern Rug.jpg" },
+  { "id": "decor4", "title": "Outdoor Patio Rug", "description": "Weather-resistant style.", "price": 200, "rating": 4.4, "reviews": 12, "image": "assets/images/product.img/Outdoor Patio Rug.jpg" },
+  { "id": "decor5", "title": "Minimalist Wool Rug", "description": "Neutral tone comfort.", "price": 310, "rating": 4.7, "reviews": 17, "image": "assets/images/product.img/Minimalist Wool Rug.jpg" },
+  { "id": "decor6", "title": "Round Accent Rug", "description": "Perfect for small spaces.", "price": 180, "rating": 4.5, "reviews": 10, "image": "assets/images/product.img/Round Accent Rug.jpg" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "floor1", "title": "Marble Tiles", "description": "Glossy premium finish.", "price": 70, "rating": 4.9, "reviews": 25, "image": "assets/images/product.img/Marble Tiles.jpg" },
+  { "id": "floor2", "title": "Hardwood Planks", "description": "Classic warm style.", "price": 85, "rating": 4.8, "reviews": 22, "image": "assets/images/product.img/Hardwood Planks.jpg" },
+  { "id": "floor3", "title": "Vinyl Flooring", "description": "Waterproof and durable.", "price": 50, "rating": 4.5, "reviews": 18, "image": "assets/images/product.img/Vinyl Flooring.jpg" },
+  { "id": "floor4", "title": "Laminate Flooring", "description": "Affordable and stylish.", "price": 45, "rating": 4.4, "reviews": 15, "image": "assets/images/product.img/Laminate Flooring.jpg" },
+  { "id": "floor5", "title": "Ceramic Tiles", "description": "Easy to clean surface.", "price": 55, "rating": 4.6, "reviews": 20, "image": "assets/images/product.img/Ceramic Tiles.jpg" },
+  { "id": "floor6", "title": "Patterned Tiles", "description": "Artistic and colorful.", "price": 60, "rating": 4.7, "reviews": 17, "image": "assets/images/product.img/pattern tiles.jpg" }
+]

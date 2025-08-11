@@ -1,0 +1,38 @@
+[
+  {
+    "id": "furniture",
+    "name": "Furniture",
+    "image": "assets/images/product.img/furniture.m.jpg",
+    "subcategories": ["Sofas", "Beds", "Tables", "Wardrobes", "Storage", "Chairs"]
+  },
+  {
+    "id": "lighting",
+    "name": "Lighting",
+    "image": "assets/images/product.img/lighting.jpg",
+    "subcategories": ["Ceiling Lights", "Wall Lights", "Floor Lamps", "Table Lamps", "Outdoor Lighting"]
+  },
+  {
+    "id": "decor",
+    "name": "Decor",
+    "image": "assets/images/product.img/decor.jpg",
+    "subcategories": ["Rugs", "Curtains", "Wall Art", "Cushions", "Vases"]
+  },
+  {
+    "id": "kitchen",
+    "name": "Kitchen",
+    "image": "assets/images/product.img/kitchen.jpg",
+    "subcategories": ["Cabinets", "Countertops", "Sinks", "Islands"]
+  },
+  {
+    "id": "bathroom",
+    "name": "Bathroom",
+    "image": "assets/images/product.img/bathroom.jpg",
+    "subcategories": ["Vanities", "Showers", "Toilets", "Mirrors"]
+  },
+  {
+    "id": "flooring",
+    "name": "Flooring",
+    "image": "assets/images/product.img/flooring.jpg",
+    "subcategories": ["Tiles", "Hardwood", "Vinyl", "Carpet"]
+  }
+]
