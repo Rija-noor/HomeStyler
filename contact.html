@@ -1,30 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&family=Raleway:ital,wght@1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/styling/navbar.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+       *{
+      font-family: 'Poppins', sans-serif;
+    }
+        .navbar-brand {
+      font-weight: 800;
+      font-size: 2rem;
+    }
+    .logo-bar {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid black;
+    }
+    .nav-bar {
+      background-color: #fff
+    }
+    .signup-btn {
+  transition: all 0.3s ease;
+}
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Google Fonts (Example: Poppins) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome (for icons) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+.signup-btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+.contact-section {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .form-control, .form-select {
+      border-radius: 30px;
+      padding: 12px 20px;
+    }
+    .btn-theme {
+      background-color: #542001;
+      border-radius: 30px;
+      padding: 12px 30px;
+      border: none;
+      color: #fff;
+    }
+    .btn-theme :hover{
+      background-color: #fff;
+      color: #000;
+    }
+    .contact-info {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+    }
+    </style>
 </head>
+
 <body>
+    <div id="navbar-container"></div>
+    <div id="modal-container"></div>
 
-  <!-- page content here -->
+    <h2 class="m-4 text-center fw-bold" style="color:#542001 ;">Let’s Connect</h2>
+<p class="text-center mt-3 mb-3 fst-italic">Reach out for support, collaborations, or just to chat. Tell us what you think — your voice shapes Homestyler.</p>
 
-  <!-- Bootstrap Bundle with Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Contact Form Section -->
+  <div class="contact-section" data-aos="fade-up">
+    <form id="contactForm" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Enter a valid email.</div>
+      </div>
+      <div class="mb-3">
+        <label for="topic" class="form-label">Topic</label>
+        <select id="topic" class="form-select" required>
+          <option disabled selected value="">Select a topic</option>
+          <option>Order Issue</option>
+          <option>Product Info</option>
+          <option>Return Request</option>
+          <option>Other</option>
+        </select>
+        <div class="invalid-feedback">Please choose a topic.</div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+        <div class="invalid-feedback">Please enter your message.</div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn-theme">Send Message</button>
+      </div>
+    </form>
+  </div>
 
-  <!-- Custom JS -->
-  <script src="js/script.js"></script>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="assets/JS/navbar.js"></script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 </html>

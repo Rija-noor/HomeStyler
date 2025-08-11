@@ -5,19 +5,36 @@ document.addEventListener("DOMContentLoaded", function(){
     .then(Data => {
       var container = $("#main_container");
       var articleData = "";
-      Data.forEach(function(main) {
-        articleData += `
-          <div class="blog-post row align-items-center" data-aos-delay="100">
-            <div class="col-md-6">
-              <img src="assets/images/design-images/${main.img1}" alt="${main.title}" class="img-fluid blog-img mb-3 mb-md-0" />
+      Data.forEach(function(main, index) {
+        if(index % 2 === 0) {
+          // Even index: image left, text right
+          articleData += `
+            <div class="blog-post row align-items-center" data-aos-delay="100">
+              <div class="col-md-6">
+                <img src="assets/images/design-images/${main.img1}" alt="${main.title}" class="img-fluid blog-img mb-3 mb-md-0" />
+              </div>
+              <div class="col-md-6 ps-md-5">
+                <h3 class="theme-color">${main.title}</h3>
+                <p>${main.description}</p>
+                <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-sm">Explore More</a>
+              </div>
             </div>
-            <div class="col-md-6 ps-md-5">
-              <h3 class="theme-color">${main.title}</h3>
-              <p>${main.description}</p>
-              <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-sm">Explore More</a>
+          `;
+        } else {
+          // Odd index: image right, text left
+          articleData += `
+            <div class="blog-post row align-items-center" data-aos-delay="100">
+              <div class="col-md-6 order-md-2">
+                <img src="assets/images/design-images/${main.img1}" alt="${main.title}" class="img-fluid blog-img mb-3 mb-md-0" />
+              </div>
+              <div class="col-md-6 ps-md-5 order-md-1">
+                <h3 class="theme-color">${main.title}</h3>
+                <p>${main.description}</p>
+                <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-sm">Explore More</a>
+              </div>
             </div>
-          </div>
-        `;
+          `;
+        }
       });
       container.append(articleData);
     })
