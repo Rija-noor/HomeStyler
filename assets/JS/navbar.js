@@ -3,7 +3,7 @@ const logoRowHTML = `
     <div class="row py-1">
       <div class="col text-center">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="logo" style="height: 40px;" class="mt-2">
+          <img src="assets/images/logo.png" alt="logo" style="height: 60px;" class="mt-2">
         </a>
       </div>
     </div>
@@ -21,10 +21,10 @@ const navRowHTML = `
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="about.html">Designs</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="about.html">Designers</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="about.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="about.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="design.html">Designs</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="designer.html">Designers</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="feedback.html">Feedback</a></li>
       </ul>
 
       <div class="d-flex gap-2">
