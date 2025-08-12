@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("assets/JS/designer.JS/designerdetail.json")
+    fetch("assets/JS/designer.js/designerdetail.json")
     .then(Response => Response.json())
     .then(Data => {
         var id = localStorage.getItem("id");
