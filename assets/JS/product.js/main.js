@@ -1,29 +1,43 @@
-// assets/JS/product.js/main.js
 document.addEventListener("DOMContentLoaded", function () {
   fetch("assets/JS/product.js/categories.json")
     .then(response => response.json())
     .then(categories => {
       var container = $("#main_container");
-      var categoryData = "";
+      var articleData = "";
 
-      categories.forEach(function (cat) {
-        categoryData += `
-          <div class="blog-post row align-items-center mb-4">
-            <div class="col-md-6">
-              <a href="card.html?category=${encodeURIComponent(cat.id)}">
-                <img src="${cat.image}" alt="${cat.name}" class="img-fluid blog-img" />
-              </a>
+      categories.forEach(function(category, index) {
+        if(index % 2 === 0) {
+          // Even index: image left, text right
+          articleData += `
+            <div class="blog-post row align-items-center mb-5" data-aos-delay="100">
+              <div class="col-md-6">
+                <img src="${category.image}" alt="${category.name}" class="img-fluid blog-img mb-3 mb-md-0" />
+              </div>
+              <div class="col-md-6 ps-md-5">
+                <h3 class="theme-color">${category.name}</h3>
+                <p>Explore our wide range of ${category.name.toLowerCase()} products including ${category.subcategories.join(", ")}.</p>
+                <a href="category.html?category=${encodeURIComponent(category.name)}" class="btn btn-theme btn-sm">Explore More</a>
+              </div>
             </div>
-            <div class="col-md-6">
-              <h3>${cat.name}</h3>
-              <p>Explore our premium ${cat.name.toLowerCase()} collection with modern designs.</p>
-              <a href="card.html?category=${encodeURIComponent(cat.id)}" class="btn btn-theme">Explore More</a>
+          `;
+        } else {
+          // Odd index: image right, text left
+          articleData += `
+            <div class="blog-post row align-items-center mb-5" data-aos-delay="100">
+              <div class="col-md-6 order-md-2">
+                <img src="${category.image}" alt="${category.name}" class="img-fluid blog-img mb-3 mb-md-0" />
+              </div>
+              <div class="col-md-6 ps-md-5 order-md-1">
+                <h3 class="theme-color">${category.name}</h3>
+                <p>Explore our wide range of ${category.name.toLowerCase()} products including ${category.subcategories.join(", ")}.</p>
+                <a href="category.html?category=${encodeURIComponent(category.name)}" class="btn btn-theme btn-sm">Explore More</a>
+              </div>
             </div>
-          </div>
-        `;
+          `;
+        }
       });
 
-      container.append(categoryData);
+      container.append(articleData);
     })
     .catch(error => console.error("Error loading categories:", error));
 });
