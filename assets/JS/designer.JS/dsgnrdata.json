@@ -52,23 +52,5 @@
         "tag1":"CONTEMPORARY",
         "tag2":"TRANSITIONAL",
         "tag3":"ECLECTIC"
-    },
-    {
-        "id":7,
-        "img1":"Pfp-Michelle-B.jpg",
-        "name":"Michelle B.",
-        "img2":"DesignBy-Michelle.jpeg",
-        "tag1":"CONTEMPORARY",
-        "tag2":"MODERN",
-        "tag3":"ECLECTIC"
-    },
-    {
-        "id":8,
-        "img1":"Pfp-Roberto-D.jpg",
-        "name":"Roberto D.",
-        "img2":"DesignBy-Roberto.jpeg",
-        "tag1":"CONTEMPORARY",
-        "tag2":"TRANSITIONAL",
-        "tag3":"MODERN"
     }
 ]
