@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "img1":"Pfp-Mladen-C.jpg",
+        "name":"Mladen C.",
+        "img2":"DesignBy-Mladen.jpg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"MODERN",
+        "tag3":"ECLECTIC"
+    },
+    {
+        "id":2,
+        "img1":"Pfp-Nikki-G.jpeg",
+        "name":"Nikki G.",
+        "img2":"DesignBy-Nikki.jpg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"ECLECTIC",
+        "tag3":"BEACH"
+    },
+    {
+        "id":3,
+        "img1":"Pfp-Meric-S.jpg",
+        "name":"Meric S.",
+        "img2":"DesignBy-Meric.jpg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"TRANSITIONAL",
+        "tag3":"MODERN"
+    },
+    {
+        "id":4,
+        "img1":"Pfp-Lori-Dennis.jpg",
+        "name":"Lori Dennis",
+        "img2":"DesignBy-Lori.jpg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"TRANSITIONAL",
+        "tag3":"BEACH"
+    },
+    {
+        "id":5,
+        "img1":"Pfp-Ahmed-S.jpeg",
+        "name":"Ahmed S.",
+        "img2":"DesignBy-Ahmed.png",
+        "tag1":"CONTEMPORARY",
+        "tag2":"TRANSITIONAL",
+        "tag3":"GLAMOROUS"
+    },
+    {
+        "id":6,
+        "img1":"Pfp-Carrie-F.jpeg",
+        "name":"Carrie F.",
+        "img2":"DesignBy-Carrie.jpg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"TRANSITIONAL",
+        "tag3":"ECLECTIC"
+    },
+    {
+        "id":7,
+        "img1":"Pfp-Michelle-B.jpg",
+        "name":"Michelle B.",
+        "img2":"DesignBy-Michelle.jpeg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"MODERN",
+        "tag3":"ECLECTIC"
+    },
+    {
+        "id":8,
+        "img1":"Pfp-Roberto-D.jpg",
+        "name":"Roberto D.",
+        "img2":"DesignBy-Roberto.jpeg",
+        "tag1":"CONTEMPORARY",
+        "tag2":"TRANSITIONAL",
+        "tag3":"MODERN"
+    }
+]

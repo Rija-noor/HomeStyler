@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function(){
         <div class="row">
           <!-- Image Section -->
           <div class="col-md-6 text-center">
-            <img id="mainImage" src="assets/images/design-images/${main.img1}" class="img-fluid mb-3" style="height:300px; object-fit:cover;">
+            <img id="mainImage" src="assets/images/design-images/${main.img1}" class="img-fluid mb-3" style="height:300px; object-fit:cover; border-radius: 15px; ">
             <div>
-              <img src="assets/images/design-images/${main.img1}" class="thumb mx-1" style=" height: 60px; cursor:pointer;">
-              <img src="assets/images/design-images/${main.img2}" class="thumb mx-1" style=" height: 60px; cursor:pointer;">
-              <img src="assets/images/design-images/${main.img3}" class="thumb mx-1" style=" height: 60px; cursor:pointer;">
+              <img src="assets/images/design-images/${main.img1}" class="thumb mx-1" style=" height: 70px; cursor:pointer; border-radius: 15px;">
+              <img src="assets/images/design-images/${main.img2}" class="thumb mx-1" style=" height: 70px; cursor:pointer; border-radius: 15px;">
+              <img src="assets/images/design-images/${main.img3}" class="thumb mx-1" style=" height: 70px; cursor:pointer; border-radius: 15px;">
             </div>
           </div>
 

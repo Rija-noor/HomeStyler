@@ -2,8 +2,8 @@ const logoRowHTML = `
   <div class="logo-bar text-center">
     <div class="row py-1">
       <div class="col text-center">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="logo" style="height: 60px;" class="mt-2">
+        <a class="navbar-brand" href="index.html" >
+          <img src="assets/images/logo.png" alt="logo" style="height: 30px;" class="mt-2">
         </a>
       </div>
     </div>
