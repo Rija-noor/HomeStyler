@@ -128,6 +128,20 @@
   border-right: 1px solid #ddd;
   padding-top: 4px;
 }
+.button{
+   padding-left: 50px;
+}
+ .btn-theme {
+      background-color: #542001;
+      border-radius: 30px;
+      padding: 12px 30px;
+      border: none;
+      color: #fff;
+    }
+    .btn-theme :hover{
+      background-color: #fff;
+      color: #000;
+    }
 </style>
 
   <!-- page content here -->
@@ -148,73 +162,8 @@
 </div>
 
 
-
-<div class="cards-container">
-
-  <!-- Card 1 -->
-  <div class="designer-card col-md-6" data-aos="zoom-in">
-    <div class="designer-header">
-      <img src="assets/images/designer-img/Pfp-Mladen-C.jpg" alt="Mladen C." class="designer-avatar">
-      <span class="designer-name">Mladen C.</span>
-    </div>
-    <div class="designer-image">
-      <img src="assets/images/designer-img/DesignBy-Mladen.jpg" alt="Living Room Design">
-    </div>
-    <div class="designer-tags">
-      <span>CONTEMPORARY</span>
-      <span>MODERN</span>
-      <span>ECLECTIC</span>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-     <div class="designer-card col-md-6" data-aos="zoom-in">
-    <div class="designer-header">
-      <img src="assets/images/designer-img/Pfp-Mladen-C.jpg" alt="Mladen C." class="designer-avatar">
-      <span class="designer-name">Mladen C.</span>
-    </div>
-    <div class="designer-image">
-      <img src="assets/images/designer-img/DesignBy-Mladen.jpg" alt="Living Room Design">
-    </div>
-    <div class="designer-tags">
-      <span>CONTEMPORARY</span>
-      <span>MODERN</span>
-      <span>ECLECTIC</span>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-     <div class="designer-card col-md-6" data-aos="zoom-in">
-    <div class="designer-header">
-      <img src="assets/images/designer-img/Pfp-Mladen-C.jpg" alt="Mladen C." class="designer-avatar">
-      <span class="designer-name">Mladen C.</span>
-    </div>
-    <div class="designer-image">
-      <img src="assets/images/designer-img/DesignBy-Mladen.jpg" alt="Living Room Design">
-    </div>
-    <div class="designer-tags">
-      <span>CONTEMPORARY</span>
-      <span>MODERN</span>
-      <span>ECLECTIC</span>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-        <div class="designer-card col-md-6" data-aos="zoom-in">
-    <div class="designer-header">
-      <img src="assets/images/designer-img/Pfp-Mladen-C.jpg" alt="Mladen C." class="designer-avatar">
-      <span class="designer-name">Mladen C.</span>
-    </div>
-    <div class="designer-image">
-      <img src="assets/images/designer-img/DesignBy-Mladen.jpg" alt="Living Room Design">
-    </div>
-    <div class="designer-tags">
-      <span>CONTEMPORARY</span>
-      <span>MODERN</span>
-      <span>ECLECTIC</span>
-    </div>
-  </div>
-</div>
+  <!-- Cards -->
+<div class="cards-container" id="designer_container"></div>
 
 
 
@@ -238,5 +187,6 @@
     once: true      // animation ek baar chale page load pe
   });
 </script>
+<script src="assets/JS/designer.JS/dsgnr.js"></script>
 
 </html>
