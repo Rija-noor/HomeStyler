@@ -20,7 +20,7 @@
   {
     "id": "kitchen",
     "name": "Kitchen",
-    "image": "assets/images/product.img/kitchen.jpg",
+    "image": "assets/images/design-images/kitchen 3.jpg",
     "subcategories": ["Cabinets", "Countertops", "Sinks", "Islands"]
   },
   {
