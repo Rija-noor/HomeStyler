@@ -1,0 +1,14 @@
+ footer a:hover {
+      color: #52001A !important;
+    }
+
+    footer .btn:hover {
+      background: #750030 !important;
+    }
+  body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fffaf0;
+      color: #542001;
+      overflow-x: hidden;
+    }
