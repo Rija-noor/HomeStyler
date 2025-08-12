@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -87,13 +86,6 @@
       font-size: 1rem;
       color: #555;
     }
-    footer a:hover {
-  color: #52001A !important;
-}
-footer .btn:hover {
-  background: #750030 !important;
-}
-
     </style>
 </head>
 
@@ -104,39 +96,36 @@ footer .btn:hover {
     <h2 class="m-4 text-center fw-bold" style="color:#542001 ;">Let’s Connect</h2>
 <p class="text-center mt-3 mb-3 fst-italic">Reach out for support, collaborations, or just to chat. Tell us what you think — your voice shapes Homestyler.</p>
 
-     <!-- Contact Form Section -->
-  <div class="contact-section" data-aos="fade-up">
-    <form id="contactForm" novalidate>
-      <div class="mb-3">
-        <label for="name" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="name" required>
-        <div class="invalid-feedback">Please enter your name.</div>
+  <section class="container py-5">
+    <div class="row align-items-center g-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/images/design-images/contact image.jpg" alt="About Homestyler" class="about-img" />
+        </div>
+
+      <!-- Text + Form -->
+      <div class="col-lg-6">
+        <h3 class="contact-header">Slide Into Our Inbox</h3>
+        <p class="tagline">Got ideas, feedback, or just feeling social ? Hit us up — we’re listening!</p>
+
+        <a href="about.html" class="btn btn-theme mb-4">→ Meet the HomeStyler Crew</a>
+
+        <!-- Quick Contact Info -->
+  <h5 class="fw-bold mb-3">Get in Touch</h5>
+  <div class="row g-4 mb-4">
+    <div class="col-md-6 d-flex">
+      <i class="bi bi-telephone-fill fs-4 me-3" style="color: #542001;"></i>
+      <div>
+        <h6 class="mb-1">Phone</h6>
+        <p class="mb-0 text-muted">+92 300 1234567</p>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" required>
-        <div class="invalid-feedback">Enter a valid email.</div>
+    </div>
+    <div class="col-md-6 d-flex">
+      <i class="bi bi-envelope-fill fs-4 me-3" style="color: #542001;"></i>
+      <div class="mb-2">
+        <h6 class="mb-1">Email</h6>
+        <p class="mb-0 text-muted">contact@homestyler.com</p>
       </div>
-      <div class="mb-3">
-        <label for="topic" class="form-label">Topic</label>
-        <select id="topic" class="form-select" required>
-          <option disabled selected value="">Select a topic</option>
-          <option>Order Issue</option>
-          <option>Product Info</option>
-          <option>Return Request</option>
-          <option>Other</option>
-        </select>
-        <div class="invalid-feedback">Please choose a topic.</div>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Your Message</label>
-        <textarea class="form-control" id="message" rows="4" required></textarea>
-        <div class="invalid-feedback">Please enter your message.</div>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn-theme">Send Message</button>
-      </div>
-    </form>
+    </div>
   </div>
 <footer style="background:#fff; color:#333; padding:60px 0; font-family:'Raleway', sans-serif; border-top:3px solid #52001A;">
   <div class="container">
@@ -205,6 +194,66 @@ footer .btn:hover {
 </footer>
 
 
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label class="form-label fw-semibold icon-label"></i>Full Name</label>
+            <input type="text"  id="name" name="name" pattern="[A-Za-z\s]+" class="form-control" placeholder="Your name" required>
+            <div class="invalid-feedback">Your name is required, fam.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold icon-label"></i>Email</label>
+            <input type="email" class="form-control" placeholder="you@vibes.com" required>
+            <div class="invalid-feedback">Drop a valid email </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold icon-label"></i>Your Feedback</label>
+            <textarea class="form-control" rows="4" placeholder="Spill the tea..." required></textarea>
+            <div class="invalid-feedback">Don’t ghost us — say something </div>
+          </div>
+
+          <button type="submit" class="btn btn-theme px-4">Send it 🚀</button>
+        </form>
+
+        <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
+          Boom! We got your message. Talk soon 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section (optional) -->
+  <section class="container py-4">
+    <h5 class="text-center fw-bold mb-3">Find Us IRL </h5>
+    <div class="shadow">
+      <iframe src="https://maps.google.com/maps?q=london&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+    height="200px"
+    style="border:0; border-radius:8px; overflow:hidden;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"> frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <script>
+    (() => {
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          success.classList.add('d-none');
+          return;
+        }
+        form.reset();
+        form.classList.remove('was-validated');
+        success.classList.remove('d-none');
+      });
+    })();
+  </script>
+    
 </body>
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

@@ -23,6 +23,7 @@ const navRowHTML = `
         <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="design.html">Designs</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="designer.html">Designers</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="product.html">Products</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="feedback.html">Feedback</a></li>
       </ul>
