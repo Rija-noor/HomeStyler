@@ -31,12 +31,12 @@
   border: 5px solid white;
   border-radius: 50%;
   overflow: hidden;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 .profile-pic img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -104,92 +104,12 @@
 <body>
 
 <!-- HEADER SECTION -->
-<header class="header-banner">
-  <img src="assets/images/designer-img/DesignBy-Michelle.jpeg" alt="Designer Banner" class="banner-img">
+<div id="designer_detail">
 
-  <div class="profile-pic">
-    <img src="assets/images/designer-img/Pfp-Mladen-C.jpg" alt="Designer">
-  </div>
-</header>
-
-<!-- DESIGNER INFO -->
-<section class="designer-info">
-  <h1 class="designer-name">Mladen C.</h1>
-  <p class="designer-bio" id="bio">
-    Mladen completed his studies in Engineering and then obtained his Master degree in Architecture Design and Urbanism. He has extensive experience working on residential and hospitality projects. Some of his well-known clients include hotel chains, such as Hilton, Sheraton, Hyatt, Marriott... <br>
-    His experience in furniture design has made him passionate about wood. You’ll find the warmth and aesthetic of wood in combination with contemporary minimalistic concepts in many of his designs! <br>
-    <span class="more-text">
-      What drives you to design??  <br>
-      The thing that drives me to design, or I would rather say, the force that drives me to design is the sense of being alive. It is the fulfillment of our spiritual need to create and learn. <br>
-      Describe your ideal project:  <br>
-      My ideal project is a smooth process of mutual responsibility, understanding, and commitment between the client and the designer that ends as a success of function and aesthetics. <br>
-      Tell us your biggest design secret:  <br>
-      My biggest design secret is my curiosity. I believe that as long as we are curious, we are alive!
-    </span>
-  </p>
-  <button class="read-more-btn" id="readMoreBtn">Read More</button>
-</section>
-
-  <!-- Designs Grid -->
-  <section class="design-grid mt-3" data-aos="fade-up">
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design1.jpg" alt="DesignImage1">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design2.jpg" alt="DesignImage2">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design3.jpg" alt="DesignImage3">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design4.jpg" alt="DesignImage4">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design5.jpg" alt="DesignImage5">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design6.jpg" alt="DesignImage6">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design7.jpg" alt="DesignImage7">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design8.jpg" alt="DesignImage8">
-    </div>
-
-    <div class="design-item">
-      <img src="assets/images/designer-img/design9.jpg" alt="DesignImage9">
-    </div>
-    <div class="design-item">
-      <img src="assets/images/designer-img/design10.jpg" alt="DesignImage10">
-    </div>
-    <div class="design-item">
-      <img src="assets/images/designer-img/design11.jpg" alt="DesignImage11">
-    </div>
-    <div class="design-item">
-      <img src="assets/images/designer-img/design12.jpg" alt="DesignImage12">
-    </div>
-    <div class="design-item">
-      <img src="assets/images/designer-img/design13.jpg" alt="DesignImage13">
-    </div>
-    <div class="design-item">
-      <img src="assets/images/designer-img/design14.jpg" alt="DesignImage14">
-    </div>
-    <div class="design-item">
-      <img src="assets/images/designer-img/design15.jpg" alt="DesignImage15">
-    </div>
-  </section>
+</div>
 
 
-<script src=""></script>
+<script src="assets/JS/designer.JS/dsgnrdetail.js"></script>
 <script>
     document.getElementById("readMoreBtn").addEventListener("click", function() {
   const moreText = document.querySelector(".more-text");
@@ -205,5 +125,7 @@
 });
 
 </script>
+<script src="assets/JS/designer.JS/dsgnr.js"></script>
+<script src="assets/JS/designer.JS/dsgnrdetail.js"></script>
 </body>
 </html>
