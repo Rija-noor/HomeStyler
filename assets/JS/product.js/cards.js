@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let output = "";
       products.forEach(product => {
         output += `
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up">
             <div class="card shadow-sm h-100">
               <img src="${product.image}" class="card-img-top" alt="${product.title}">
               <div class="card-body">

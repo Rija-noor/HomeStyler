@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       categories.forEach(function (cat) {
         categoryData += `
-          <div class="blog-post row align-items-center mb-4">
+          <div class="blog-post row align-items-center mb-4" data-aos="fade-up">
             <div class="col-md-6">
               <a href="card.html?category=${encodeURIComponent(cat.id)}">
                 <img src="${cat.image}" alt="${cat.name}" class="img-fluid blog-img" />
