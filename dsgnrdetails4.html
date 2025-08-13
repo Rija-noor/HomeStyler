@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="assets/styling/navbar.css">
+  <link rel="stylesheet" href="assets/styling/footer.css">
+</head>
+<style>
+    body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+/* HEADER BANNER */
+.header-banner {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-pic {
+  position: absolute;
+  bottom: -60px;
+  left: 30px;
+  border: 5px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.designerdetail-cont{
+  color: black;
+}
+/* DESIGNER INFO */
+.designer-info {
+  background: white;
+  padding: 80px 20px 20px 20px;
+  margin-top: -40px;
+  text-align: center;
+}
+.designer-name {
+  margin: 0;
+  text-align: left;
+  padding-left: 18px;
+}
+.designer-bio {
+  line-height: 1.6;
+  font-size: 20px;
+}
+/* .more-text {
+  display: inline;
+}
+.read-more-btn {
+  background: #5a2d2d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+.design-grid {
+      column-count: 3;
+      column-gap: 1.5rem;
+      padding: 0 20px;
+    }
+
+    .design-item {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .design-item:hover {
+      transform: scale(1.03);
+    }
+
+    .design-item img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 992px) {
+      .design-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .design-grid {
+        column-count: 1;
+      }}
+
+</style>
+<body>
+ <!-- Navbar -->
+  <div id="navbar-container"></div>
+<!-- HEADER SECTION -->
+  <!-- Designer Detail 4 -->
+<div  class="designerdetail-cont">
+    <header class="header-banner">
+  <img src="assets/images/designer-img/DesignBy-Nikki.jpg" alt="Designer Banner" class="banner-img">
+  <div class="profile-pic">
+    <img src="assets/images/designer-img/Pfp-Meric-S.jpg" alt="Designer">
+  </div>
+</header>
+<!-- DESIGNER INFO -->
+<section class="designer-info">
+  <h1 class="designer-name">Meric S.</h1>
+  <p class="designer-bio" id="bio">
+   For the past 20 years, Meric has been designing living spaces, from a small patio design or a kitchen remodel to a large scale of office space or a hotel design. During and after her studies in architecture, she had the chance to travel all over Europe. She was heavily influenced by European architecture. She spent a considerable amount of time in Rome, Milan, Athens, Barcelona, Paris, London, and of course, her home city where the east meets west, a crossroads of civilizations. As a result, these different cultural scenes play a massive role in defining her unique taste in design. Meric uses a combination of sophistication with contemporary and eclectic elements. She aims to create timeless spaces where people feel comfortable. <br>
+   What drives you to design? <br>
+    I love creating different spaces for different kinds of people where all of them feel comfortable and embrace with love and happiness. Every happy customer is my motivation to design better every time. <br>
+    Tell us your biggest design secret:  <br>
+    My biggest design secret is my different cultural aspects. I am a good listener, and I am always good at understanding my clients' needs. I usually mix the requirements with various cultural elements to create eclectic and sophisticated spaces.  <br>
+    We know you love designing, but what about it do you love most?  <br>
+    One of the very best things about designing is constant reinvention and willingness to try new ideas. When you are a designer, everday is a new day.
+ </p>
+</section>
+  <!-- Designs Grid -->
+  <section class="design-grid mt-3" data-aos="fade-up">
+    <div class="design-item">
+      <img src="assets/images/designer-img/design46.jpg" alt="DesignImage1"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design47.jpg" alt="DesignImage2"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design48.jpg" alt="DesignImage3"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design49.jpg" alt="DesignImage4"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design50.jpg" alt="DesignImage5"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design51.jpg" alt="DesignImage6"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design52.jpg" alt="DesignImage7"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design53.jpg" alt="DesignImage8"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design54.jpg" alt="DesignImage9"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design55.jpg" alt="DesignImage10"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design56.jpg" alt="DesignImage11"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design57.jpg" alt="DesignImage12"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design58.jpg" alt="DesignImage13"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design59.jpg" alt="DesignImage14"></div>
+    <div class="design-item">
+      <img src="assets/images/designer-img/design60.jpg" alt="DesignImage15"></div>
+  </section>
+</div>
+<!-- Footer -->
+   <footer style="background:#fff; color:#542001; padding: 50px 0; font-family:'Poppins', sans-serif; border-top:3px solid #52001A; font-size:14px; margin-top: 20px;">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Logo & About -->
+        <div class="col-lg-4 col-md-6">
+          <h4 style="color:#52001A; font-weight:bold; font-size:18px;">HomeStyler</h4>
+          <p style="line-height:1.7; font-size:13px;">
+            HomeStyler brings you premium furniture, decor, and home solutions with unmatched quality and style.
+            From modern designs to timeless classics, we help you create a space you'll love.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 style="color:#52001A; font-size:16px;">Quick Links</h5>
+          <ul class="list-unstyled" style="line-height:2; font-size:13px;">
+            <li><a href="index.html" class="text-decoration-none" style="color:#542001;">Home</a></li>
+            <li><a href="about.html" class="text-decoration-none" style="color:#542001;">About Us</a></li>
+            <li><a href="contact.html" class="text-decoration-none" style="color:#542001;">Contact</a></li>
+            <li><a href="faq.html" class="text-decoration-none" style="color:#542001;">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-6">
+          <h5 style="color:#52001A; font-size:16px;">Shop by Category</h5>
+          <ul class="list-unstyled" style="line-height:2; font-size:13px;">
+            <li><a href="product.html?category=furniture" class="text-decoration-none" style="color:#542001;">Furniture</a></li>
+            <li><a href="product.html?category=lighting" class="text-decoration-none" style="color:#542001;">Lighting</a></li>
+            <li><a href="product.html?category=decor" class="text-decoration-none" style="color:#542001;">Decor</a></li>
+            <li><a href="product.html?category=kitchen" class="text-decoration-none" style="color:#542001;">Kitchen</a></li>
+            <li><a href="product.html?category=bathroom" class="text-decoration-none" style="color:#542001;">Bathroom</a></li>
+            <li><a href="product.html?category=flooring" class="text-decoration-none" style="color:#542001;">Flooring</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 style="color:#52001A; font-size:16px;">Newsletter</h5>
+          <p style="font-size:13px;">Subscribe to get special offers and home styling tips.</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control border-dark" placeholder="Your email" style="font-size:13px;" />
+              <button class="btn" style="background:#52001A; color:white; font-size:13px;" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr style="margin:30px 0; border-color:#ccc;" />
+      <!-- Bottom -->
+      <div class="text-center" style="font-size:12px; color:#542001;">
+        &copy; 2025 <strong style="color:#52001A;">HomeStyler</strong>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="assets/JS/navbar.js"></script>
+<!-- <script>
+  document.getElementById("readMoreBtn").addEventListener("click", function () {
+    const moreText = document.querySelector(".more-text");
+    const btn = this;
+
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "inline";
+      btn.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      btn.textContent = "Read More";
+    }
+  });
+</script> -->
