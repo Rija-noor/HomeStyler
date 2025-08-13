@@ -15,21 +15,113 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    footer a:hover {
-  color: #52001A !important;
-}
-footer .btn:hover {
-  background: #750030 !important;
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+<style>
+/* Brown & White Color Theme */
+body {
+  background-color: #fffaf0; /* light creamy white */
+  color: #5a3e1b; /* brown text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-  </style>
+.site-title {
+  color: #6f4e37; /* darker brown */
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sitemap-list {
+  background-color: #fff;
+  border: 2px solid #6f4e37;
+  border-radius: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemap-list > li {
+  border-bottom: 1px solid #d1b89d;
+}
+
+.sitemap-list > li:last-child {
+  border-bottom: none;
+}
+
+.sitemap-link {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #5a3e1b;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sitemap-link:hover,
+.sitemap-link:focus {
+  background-color: #6f4e37;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nested-list {
+  list-style: none;
+  margin-left: 20px;
+  border-left: 3px solid #d1b89d;
+  padding-left: 15px;
+}
+
+.nested-list > li {
+  border: none;
+}
+
+.nested-list .sitemap-link {
+  font-weight: 500;
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+
+</style>
+
 </head>
 <body>
 
-  <!-- page content here -->
-data-aos="fade-up"
+   <div class="container py-5">
+    <h1 class="text-center mb-4 site-title">Site Map</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-sm-12">
+        <ul class="list-group sitemap-list">
+          <li class="list-group-item">
+            <a href="index.html" class="sitemap-link">Home</a>
+          </li>
+          <li class="list-group-item">
+            <a href="about.html" class="sitemap-link">About Us</a>
+          </li>
+          <li class="list-group-item">
+            <a href="services.html" class="sitemap-link">Services</a>
+            <ul class="list-group nested-list mt-2">
+              <li class="list-group-item">
+                <a href="services-web.html" class="sitemap-link">Web Development</a>
+              </li>
+              <li class="list-group-item">
+                <a href="services-design.html" class="sitemap-link">Graphic Design</a>
+              </li>
+              <li class="list-group-item">
+                <a href="services-marketing.html" class="sitemap-link">Marketing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <a href="blog.html" class="sitemap-link">Blog</a>
+          </li>
+          <li class="list-group-item">
+            <a href="contact.html" class="sitemap-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
   <!-- Bootstrap Bundle with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
                       <img src="assets/images/designer-img/${d.img1}" alt="" class="designer-avatar">
                       <span class="designer-name">${d.name}</span>
                       <div class="button">
-                        <button type="button" class="btn-theme">Explore More</button>
+                      <a href="dsgnrdetails.html" class="btn-theme">Explore More</a>
+                        
                       </div>
                     </div>
                     <div class="designer-image">
