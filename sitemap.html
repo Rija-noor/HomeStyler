@@ -16,44 +16,100 @@
 <!-- css -->
   <link rel="stylesheet" href="assets/styling/carousel.css" />
   <link rel="stylesheet" href="assets/styling/footer.css" />
+  <link rel="stylesheet" href="assets/styling/navbar.css">
+  <link rel="stylesheet" href="assets/styling/site.css">
+
 </head>
 <body>
+  <div id="navbar-container"></div>
+  <div id="modal-container"></div>
+  <!-- Banner Section -->
+  <section class="product-header">
+    <h1>SITE MAP</h1>
+    <p>
+     This sitemap provides a clear overview of the HomeStyler website’s structure, helping visitors easily navigate through different sections. 
+  From exploring unique interior designs and professional designers to browsing products and reading detailed articles, 
+  each link here takes you directly to the corresponding page. Use this visual guide to quickly access the content you need.
+    </p>
+  </section>
 
-   <div class="container py-5">
-    <h1 class="text-center mb-4 site-title">Site Map</h1>
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-sm-12">
-        <ul class="list-group sitemap-list">
-          <li class="list-group-item">
-            <a href="index.html" class="sitemap-link">Home</a>
-          </li>
-          <li class="list-group-item">
-            <a href="about.html" class="sitemap-link">About Us</a>
-          </li>
-          <li class="list-group-item">
-            <a href="services.html" class="sitemap-link">Services</a>
-            <ul class="list-group nested-list mt-2">
-              <li class="list-group-item">
-                <a href="services-web.html" class="sitemap-link">Web Development</a>
+
+  <div class="sitemap">
+    <ul>
+      <li>
+        <div class="box main">
+          <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        </div>
+        <ul>
+          <li>
+            <div class="box">
+              <a href="design.html"><i class="fa-solid fa-palette"></i><span>Designs</span></a>
+            </div>
+            <ul>
+              <li>
+                <div class="box">
+                  <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
+                </div>
               </li>
-              <li class="list-group-item">
-                <a href="services-design.html" class="sitemap-link">Graphic Design</a>
+              <li>
+                <div class="box">
+                  <a href="contact.html"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+                </div>
               </li>
-              <li class="list-group-item">
-                <a href="services-marketing.html" class="sitemap-link">Marketing</a>
+              <li>
+                <div class="box">
+                  <a href="design-article.html"><i class="fa-solid fa-file-lines"></i><span>Design Article</span></a>
+                </div>
               </li>
             </ul>
           </li>
-          <li class="list-group-item">
-            <a href="blog.html" class="sitemap-link">Blog</a>
+
+          <li>
+            <div class="box">
+              <a href="designer.html"><i class="fa-solid fa-user-tie"></i><span>Designers</span></a>
+            </div>
+            <ul>
+              <li>
+                <div class="box">
+                  <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a href="dsgnrdetails.html"><i class="fa-solid fa-id-badge"></i><span>Designer Details</span></a>
+                </div>
+              </li>
+            </ul>
           </li>
-          <li class="list-group-item">
-            <a href="contact.html" class="sitemap-link">Contact</a>
+
+          <li>
+            <div class="box">
+              <a href="product.html"><i class="fa-solid fa-box-open"></i><span>Products</span></a>
+            </div>
+            <ul>
+              <li>
+                <div class="box">
+                  <a href="category.html"><i class="fa-solid fa-list"></i><span>Category</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="box">
+                  <a href="card.html"><i class="fa-solid fa-clone"></i><span>Card</span></a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="box">
+              <a href="sitemap.html"><i class="fa-solid fa-sitemap"></i><span>Sitemap</span></a>
+            </div>
           </li>
         </ul>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
+
 
   <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -61,13 +117,14 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-<footer style="background:#fff; color:#542001; padding:50px 0; font-family:'Poppins', sans-serif; border-top:3px solid #52001A; font-size:14px;">
+ 
+<footer style="background:#fff; color:#542001; padding:50px 0; font-family:'Poppins', sans-serif; border-top:3px solid #542001; font-size:14px;">
   <div class="container">
     <div class="row gy-5">
 
       <!-- Logo & About -->
       <div class="col-lg-4 col-md-6">
-        <h4 style="color:#52001A; font-weight:bold; font-size:18px;">HomeStyler</h4>
+        <h4 style="color:#542001; font-weight:bold; font-size:18px;">HomeStyler</h4>
         <p style="line-height:1.7; font-size:13px;">
           HomeStyler brings you premium furniture, decor, and home solutions with unmatched quality and style.
           From modern designs to timeless classics, we help you create a space you'll love.
@@ -82,7 +139,7 @@
 
       <!-- Quick Links -->
       <div class="col-lg-2 col-md-6">
-        <h5 style="color:#52001A; font-size:16px;">Quick Links</h5>
+        <h5 style="color:#542001; font-size:16px;">Quick Links</h5>
         <ul class="list-unstyled" style="line-height:2; font-size:13px;">
           <li><a href="index.html" class="text-decoration-none" style="color:#542001;">Home</a></li>
           <li><a href="about.html" class="text-decoration-none" style="color:#542001;">About Us</a></li>
@@ -93,7 +150,7 @@
 
       <!-- Categories -->
       <div class="col-lg-3 col-md-6">
-        <h5 style="color:#52001A; font-size:16px;">Shop by Category</h5>
+        <h5 style="color:#542001; font-size:16px;">Shop by Category</h5>
         <ul class="list-unstyled" style="line-height:2; font-size:13px;">
           <li><a href="product.html?category=furniture" class="text-decoration-none" style="color:#542001;">Furniture</a></li>
           <li><a href="product.html?category=lighting" class="text-decoration-none" style="color:#542001;">Lighting</a></li>
@@ -106,12 +163,12 @@
 
       <!-- Newsletter -->
       <div class="col-lg-3 col-md-6">
-        <h5 style="color:#52001A; font-size:16px;">Newsletter</h5>
+        <h5 style="color:#542001; font-size:16px;">Connect With Us</h5>
         <p style="font-size:13px;">Subscribe to get special offers and home styling tips.</p>
         <form>
           <div class="input-group">
             <input type="email" class="form-control border-dark" placeholder="Your email" style="font-size:13px;" />
-            <button class="btn" style="background:#52001A; color:white; font-size:13px;" type="submit">Subscribe</button>
+            <button class="btn" style="background:#542001; color:white; font-size:13px;" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
@@ -122,7 +179,7 @@
 
     <!-- Bottom -->
     <div class="text-center" style="font-size:12px; color:#542001;">
-      &copy; 2025 <strong style="color:#52001A;">HomeStyler</strong>. All Rights Reserved.
+      &copy; 2025 <strong style="color:#542001;">HomeStyler</strong>. All Rights Reserved.
     </div>
   </div>
 </footer>
@@ -131,7 +188,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom JS -->
-  <script src="js/script.js"></script>
+  <script src="assets/JS/navbar.js"></script>
 </body>
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

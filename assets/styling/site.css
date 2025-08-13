@@ -1,0 +1,84 @@
+/* General sitemap styles */
+.sitemap {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin: 20px;
+}
+
+.sitemap ul {
+  padding-left: 0;
+  position: relative;
+  display: inline-block;
+}
+
+/* Connector lines */
+.sitemap li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+  position: relative;
+  padding: 20px 10px 0 10px;
+}
+
+.sitemap li::before,
+.sitemap li::after {
+  content: '';
+  position: absolute;
+  border-top: 2px solid #ccc;
+  top: 0;
+  width: 50%;
+  height: 20px;
+}
+
+.sitemap li::before {
+  right: 50%;
+}
+
+.sitemap li::after {
+  left: 50%;
+}
+
+/* Remove connector for last item */
+.sitemap li:last-child::after {
+  border-left: none;
+  border-top: none;
+}
+
+/* Remove connector for first item */
+.sitemap li:first-child::before {
+  border-right: none;
+  border-top: none;
+}
+
+/* Remove connectors for single nodes */
+.sitemap li:only-child::before,
+.sitemap li:only-child::after {
+  display: none;
+}
+
+/* Node box styles */
+.sitemap a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sitemap a:hover {
+  background: #e6f0ff;
+  border-color: #542001;
+  color: #542001;
+}
+
+/* Icons with text */
+.sitemap a i {
+  margin-right: 6px;
+  color: #542001;
+  font-size: 16px;
+}
