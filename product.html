@@ -3,322 +3,234 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Page Title</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Product Page - HomeStyler</title>
 
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- jquery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- google fonts  -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&family=Raleway:ital,wght@1,100..900&display=swap"
-    rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+RO:wght@100..400&family=Raleway:ital,wght@1,100..900&display=swap"
+    rel="stylesheet" />
+
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <!-- css -->
-  <link rel="stylesheet" href="assets/styling/navbar.css">
-  <link rel="stylesheet" href="assets/styling/home.css">
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
- 
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styling/navbar.css" />
+  <link rel="stylesheet" href="assets/styling/home.css" />
+  <link rel="stylesheet" href="assets/styling/blog.css" />
+  <link rel="stylesheet" href="assets/styling/carousel.css" />
+  <link rel="stylesheet" href="assets/styling/footer.css" />
+
+
+  
 </head>
-<style>
-  * {
-      font-family: 'Poppins', sans-serif;
-    }
-  .blog-post {
-      margin-bottom: 60px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 40px;
-    }
 
-    .blog-img {
-      height: 300px;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.5s ease, filter 0.5s ease;
-    }
-
-.blog-img:hover {
-  transform: scale(1.05);
-  filter: brightness(0.9);
-  cursor: pointer;
-}
-
-    .theme-color h3{
-      color: #542001;
-    }
-      .btn-theme {
-      border: 2px solid #542001;
-      color: #542001;
-      transition: 0.3s ease;
-    }
-
-    .btn-theme:hover {
-      background-color: #542001;
-      color: #fff;
-    }
-
-    @media (max-width: 768px) {
-      .blog-post {
-        flex-direction: column !important;
-        text-align: center;
-      }
-    }
-   .carousel-item img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 6px;
-   }
-   footer a:hover {
-  color: #52001A !important;
-}
-footer .btn:hover {
-  background: #750030 !important;
-}
-
-</style>
 <body>
-  <body style="overflow-x: hidden;">
 
   <div id="navbar-container"></div>
-  <div id="modal-container"></div> 
-  <h1></h1>
+  <div id="modal-container"></div>
 
- <!-- Carousel start here -->
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-  <div class="carousel-inner">
-    <!-- Image slide -->
-    <div class="carousel-item active">
-      <img src="assets/images/design-images/design-banner-img.png" class="d-block w-100" alt="Living Room" style="height: 393px; object-fit: cover;">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/design-images/design-banner-img2.png" class="d-block w-100" alt="Living Room" style="height: 393px; object-fit: cover;">
-    </div>
+  <!-- Banner Section -->
+  <section class="product-header">
+    <h1>Discover the Essence of Luxury</h1>
+    <p>
+      Our exclusive collection of handcrafted products brings timeless elegance and unmatched quality to your
+      daily life. Experience the perfect blend of tradition and innovation.
+    </p>
+  </section>
+
+  <div class="banner-container">
+    <img src="assets/images/product.img/product banner.jpg.png" alt="Product Banner" />
   </div>
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <h3 class="product-title">Designs That Inspire Every Day With Luxury Products</h3>
+<div class="container py-5">
+  <!-- Dynamic heading/tagline -->
+  <div id="main_container" class="row align-items-center"></div>
+  
 
-<h3 class="m-4 text-center" style="color:#542001 ;">Designs That Inspire Every Day With luxury Products</h3>
-<p class="text-center mt-3 mb-3 fst-italic">We transform ordinary rooms into extraordinary experiences, crafting spaces where beauty meets functionality in every detail.</p>
-  <!-- Blog Section -->
-<h3 class="m-4 text-center" style="color:#542001 ;"> Product Categories</h3>
-  <section class="container py-5">
-    <div id="main_container" class="row align-items-center"></div>
-
-    <h3 class="m-4 text-center" style="color:#542001 ;">Explore the Possibilities</h3>
-<p class="text-center mt-3 mb-3 fst-italic">From modern minimalism to classic elegance, browse our gallery and discover designs that spark inspiration.</p>
+  <h3>Explore the Possibilities</h3>
+  <p class="text-center fst-italic">
+    From modern minimalism to classic elegance, browse our gallery and discover designs that spark inspiration.
+  </p>
 
   <div class="container py-5">
-  <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-inner"data-aos="fade-right">
+    <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-aos="fade-right">
+      <div class="carousel-inner">
 
-      <!-- First Slide -->
-      <div class="carousel-item active">
-        <div class="row g-3">
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 1.jpg" alt="Bedroom" class="w-100">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 1.jpg" alt="Bedroom" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 2.jpg" alt="Bathroom" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery image 3.jpg" alt="Kitchen" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 4.jpg" alt="Living Room" class="w-100" />
+            </div>
           </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 2.jpg" alt="Bathroom" class="w-100">
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 5.jpg" alt="Bedroom A" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 6.jpg" alt="Bathroom A" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 7.jpg" alt="Kitchen A" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 8.jpg" alt="Living Room A" class="w-100" />
+            </div>
           </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery image 3.jpg" alt="Kitchen" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 4.jpg" alt="Living Room" class="w-100">
+        </div>
+
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 9.jpg" alt="Bedroom B" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 10.jpg" alt="Bathroom B" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 11.jpg" alt="Kitchen B" class="w-100" />
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="assets/images/design-images/gallery img 12.jpg" alt="Living Room B" class="w-100" />
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Second Slide -->
-      <div class="carousel-item">
-        <div class="row g-3">
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 5.jpg" alt="Bedroom A" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 6.jpg" alt="Bathroom A" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 7.jpg" alt="Kitchen A" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 8.jpg" alt="Living Room A" class="w-100">
-          </div>
-        </div>
-      </div>
-
-      <!-- Third Slide -->
-      <div class="carousel-item">
-        <div class="row g-3">
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 9.jpg" alt="Bedroom B" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 10.jpg" alt="Bathroom B" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 11.jpg" alt="Kitchen B" class="w-100">
-          </div>
-          <div class="col-md-3 col-6">
-            <img src="assets/images/design-images/gallery img 12.jpg" alt="Living Room B" class="w-100">
-          </div>
-        </div>
-      </div>
-
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
   </div>
-</div>
 
-
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-  </div>
-</div>
-
-<footer style="background:#fff; color:#333; padding:60px 0; font-family:'Raleway', sans-serif; border-top:3px solid #52001A;">
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+<footer style="background:#fff; color:#542001; padding:50px 0; font-family:'Poppins', sans-serif; border-top:3px solid #542001; font-size:14px;">
   <div class="container">
     <div class="row gy-5">
 
       <!-- Logo & About -->
       <div class="col-lg-4 col-md-6">
-        <h4 style="color:#52001A; font-weight:bold;">HomeStyler</h4>
-        <p style="line-height:1.8;">
+        <h4 style="color:#542001; font-weight:bold; font-size:18px;">HomeStyler</h4>
+        <p style="line-height:1.7; font-size:13px;">
           HomeStyler brings you premium furniture, decor, and home solutions with unmatched quality and style.
           From modern designs to timeless classics, we help you create a space you'll love.
         </p>
         <div class="d-flex gap-3 mt-3">
-          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
 
       <!-- Quick Links -->
       <div class="col-lg-2 col-md-6">
-        <h5 style="color:#52001A;">Quick Links</h5>
-        <ul class="list-unstyled" style="line-height:2;">
-          <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-          <li><a href="about.html" class="text-dark text-decoration-none">About Us</a></li>
-          <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
-          <li><a href="faq.html" class="text-dark text-decoration-none">FAQs</a></li>
+        <h5 style="color:#542001; font-size:16px;">Quick Links</h5>
+        <ul class="list-unstyled" style="line-height:2; font-size:13px;">
+          <li><a href="index.html" class="text-decoration-none" style="color:#542001;">Home</a></li>
+          <li><a href="about.html" class="text-decoration-none" style="color:#542001;">About Us</a></li>
+          <li><a href="contact.html" class="text-decoration-none" style="color:#542001;">Contact</a></li>
+          <li><a href="faq.html" class="text-decoration-none" style="color:#542001;">FAQs</a></li>
         </ul>
       </div>
 
       <!-- Categories -->
       <div class="col-lg-3 col-md-6">
-        <h5 style="color:#52001A;">Shop by Category</h5>
-        <ul class="list-unstyled" style="line-height:2;">
-          <li><a href="product.html?category=furniture" class="text-dark text-decoration-none">Furniture</a></li>
-          <li><a href="product.html?category=lighting" class="text-dark text-decoration-none">Lighting</a></li>
-          <li><a href="product.html?category=decor" class="text-dark text-decoration-none">Decor</a></li>
-          <li><a href="product.html?category=kitchen" class="text-dark text-decoration-none">Kitchen</a></li>
-          <li><a href="product.html?category=bathroom" class="text-dark text-decoration-none">Bathroom</a></li>
-          <li><a href="product.html?category=flooring" class="text-dark text-decoration-none">Flooring</a></li>
+        <h5 style="color:#542001; font-size:16px;">Shop by Category</h5>
+        <ul class="list-unstyled" style="line-height:2; font-size:13px;">
+          <li><a href="product.html?category=furniture" class="text-decoration-none" style="color:#542001;">Furniture</a></li>
+          <li><a href="product.html?category=lighting" class="text-decoration-none" style="color:#542001;">Lighting</a></li>
+          <li><a href="product.html?category=decor" class="text-decoration-none" style="color:#542001;">Decor</a></li>
+          <li><a href="product.html?category=kitchen" class="text-decoration-none" style="color:#542001;">Kitchen</a></li>
+          <li><a href="product.html?category=bathroom" class="text-decoration-none" style="color:#542001;">Bathroom</a></li>
+          <li><a href="product.html?category=flooring" class="text-decoration-none" style="color:#542001;">Flooring</a></li>
         </ul>
       </div>
 
       <!-- Newsletter -->
       <div class="col-lg-3 col-md-6">
-        <h5 style="color:#52001A;">Newsletter</h5>
-        <p>Subscribe to get special offers and home styling tips.</p>
+        <h5 style="color:#542001; font-size:16px;">Connect With Us</h5>
+        <p style="font-size:13px;">Subscribe to get special offers and home styling tips.</p>
         <form>
           <div class="input-group">
-            <input type="email" class="form-control border-dark" placeholder="Your email">
-            <button class="btn" style="background:#52001A; color:white;" type="submit">Subscribe</button>
+            <input type="email" class="form-control border-dark" placeholder="Your email" style="font-size:13px;" />
+            <button class="btn" style="background:#542001; color:white; font-size:13px;" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
 
     </div>
 
-    <hr style="margin:40px 0; border-color:#ccc;">
+    <hr style="margin:30px 0; border-color:#ccc;" />
 
     <!-- Bottom -->
-    <div class="text-center" style="font-size:14px; color:#666;">
-      &copy; 2025 <strong style="color:#52001A;">HomeStyler</strong>. All Rights Reserved.
+    <div class="text-center" style="font-size:12px; color:#542001;">
+      &copy; 2025 <strong style="color:#542001;">HomeStyler</strong>. All Rights Reserved.
     </div>
   </div>
 </footer>
 
-</body>
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,  // animation speed in ms
-    once: true      // animation ek baar chale page load pe
-  });
-</script>
+
+  <!-- JS Scripts -->
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
 
   <!-- Custom JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
- <!-- bootstrap js -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-   </script>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- 
- <script src="assets/JS/navbar.js"></script>
- 
-<script src="assets/JS/product.js/main.js"></script>
- 
- <!-- Scripts -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/JS/navbar.js"></script>
+  <script src="assets/JS/product.js/main.js"></script>
+</body>
 </html>
-
-

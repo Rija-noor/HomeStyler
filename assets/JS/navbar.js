@@ -26,6 +26,8 @@ const navRowHTML = `
         <li class="nav-item"><a class="nav-link text-dark" href="product.html">Products</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link text-dark" href="feedback.html">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="sitemap.html">Site Map</a></li>
+
       </ul>
 
       <div class="d-flex gap-2">

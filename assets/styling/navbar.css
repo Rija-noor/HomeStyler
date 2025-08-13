@@ -1,3 +1,65 @@
-.navbar-nav{
-  font-size: 13px;
+
+.navbar,
+.navbar * {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.logo-bar {
+  background-color: #fff !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.logo-bar img {
+  max-height: 35px !important;
+}
+
+.navbar {
+  background-color: #fff !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important;
+  font-weight: 500 !important;
+  padding: 8px 15px !important;
+  transition: color 0.3s ease !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #542001 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-dark {
+  border-color: #000 !important;
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.signup-btn {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  border: none !important;
+}
+
+.signup-btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
 }

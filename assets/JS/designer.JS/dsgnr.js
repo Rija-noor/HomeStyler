@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("assets/JS/designer.JS/dsgnrdata.json")
+    fetch("assets/JS/designer.js/dsgnrdata.json")
         .then(response => response.json())
         .then(DsgnrData => {
             let cards = "";
