@@ -7,19 +7,20 @@
       padding: 0 15px;
     }
 
-    .product-header h1 {
-      font-size: 2.8rem;
+    .product-header h2 {
+      /* font-size: 2.8rem;
       font-weight: 700;
       letter-spacing: 2px;
-      text-transform: uppercase;
+      text-transform: uppercase; */
       margin-bottom: 0.5rem;
     }
 
     .product-header p {
-      font-size: 1.2rem;
-      font-style: italic;
+      /* font-size: 1.2rem; */
+      /* font-style: italic; */
       line-height: 1.5;
       margin-bottom: 1rem;
+      color: black;
     }
 
     /* Full width banner image */
@@ -36,17 +37,17 @@
 
     .banner-container img {
       width: 100%;
-      height: auto;
+      height: 350px;
       object-fit: cover;
       display: block;
       border-radius: 0;
       transition: transform 0.4s ease;
     }
 
-    .banner-container img:hover {
+    /* .banner-container img:hover {
       transform: scale(1.05);
       cursor: pointer;
-    }
+    } */
 
     /* Other headings */
     h3.product-title,
@@ -54,7 +55,7 @@
       color: #542001;
       margin: 30px 0 15px;
       text-align: center;
-      font-weight: 700;
+      font-size: 2rem !important
     }
 
     p.text-center.fst-italic {

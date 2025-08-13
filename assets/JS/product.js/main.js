@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>Explore our premium ${cat.name.toLowerCase()} collection with modern designs.</p>
                 <div class="text-center">
 
-                <a href="card.html?category=${encodeURIComponent(cat.id)}" class="btn btn-theme btn-sm">Explore More</a>
+                <a href="card.html?category=${encodeURIComponent(cat.id)}" class="btn btn-theme btn-md">Explore More</a>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3 class="theme-color">${cat.name}</h3>
                 <p>Explore our premium ${cat.name.toLowerCase()} collection with modern designs.</p>
                 <div class="text-center">
-                <a href="card.html?category=${encodeURIComponent(cat.id)}" class="btn btn-theme btn-sm">Explore More</a>
+                <a href="card.html?category=${encodeURIComponent(cat.id)}" class="btn btn-theme btn-md">Explore More</a>
                 </div>
               </div>
             </div>

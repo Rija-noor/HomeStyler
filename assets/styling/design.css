@@ -30,15 +30,19 @@
     .theme-color h3{
       color: #542001;
     }
+    .btn{
+      text-align: center;
+    }
       .btn-theme {
-      border: 2px solid #542001;
-      color: white;
-      transition: 0.3s ease;
+      border: 2px solid #542001 !important;
+      color: #542001 !important;
+      transition: 0.3s ease !important;
+      border-radius: 22px;
     }
 
     .btn-theme:hover {
-      background-color: #542001;
-      color: #fff;
+      background-color: #542001 !important;
+      color: #fff !important;
     }
 
     @media (max-width: 768px) {

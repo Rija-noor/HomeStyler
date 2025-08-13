@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="col-md-6 ps-md-5 order-md-2">
                 <h3 class="theme-color">${main.title}</h3>
                 <p>${main.description}</p>
-                <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-sm">Explore More</a>
+                <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-md btn-center">Explore More</a>
               </div>
             </div>
           `;
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="col-md-6 ps-md-5 order-md-1">
                 <h3 class="theme-color">${main.title}</h3>
                 <p>${main.description}</p>
-                <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-sm">Explore More</a>
+                <a href="category.html?category=${encodeURIComponent(main.title)}" class="btn btn-theme btn-md btn-center">Explore More</a>
               </div>
             </div>
           `;
