@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Page Title</title>
+  <title> Online Interior Designers</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
   <!-- google fonts  -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400..900&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -34,8 +34,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <!-- css -->
-  <link rel="stylesheet" href="assets/styling/navbar.css">
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Swiper CSS -->
@@ -45,11 +43,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/styling/navbar.css">
+  <link rel="stylesheet" href="assets/styling/footer.css">
+  <link rel="stylesheet" href="assets/styling/carousel.css">
 </head>
 <style>
-   * {
-      font-family: 'Poppins', sans-serif;
-    }
+  *{
+    font-family: 'Poppins', sans-serif;
+  }
   body {
   background: #f9f9f9;
   padding: 15px;
@@ -71,7 +72,6 @@
   border: 1px solid #eee;
   flex: 0 0 calc(50% - 20px);
 }
-
 .designer-header {
   display: flex;
   align-items: center;
@@ -92,28 +92,16 @@
   font-size: 25px;
   flex: 1;
 }
-
-/* .invite-btn {
-  background: #d4b676;
-  color: #fff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.invite-btn:hover {
-  background: #b99f5b;
-} */
-
 .designer-image img {
   width: 100%;
   display: block;
   height: auto;
+  transition: transform 0.4s ease;
 }
-
+.designer-image img:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
 .designer-tags {
   display: flex;
   gap: 10px;
@@ -143,20 +131,13 @@
       background-color: #fff;
       color: #000;
     }
-
-    footer a:hover {
-  color: #52001A !important;
-}
-footer .btn:hover {
-  background: #750030 !important;
-}
 </style>
-
 <body>
 
   <!-- page content here -->
 
   <div id="navbar-container"></div>
+  <div id="modal-container"></div>
   
   <!-- Owl Carousel -->
    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -171,77 +152,187 @@ footer .btn:hover {
   </div>
 </div>
 
+  <!-- Designer Cards -->
+<div class="cards-container">
+  <!-- Card 1 -->
+   <div class="designer-card col-md-6" data-aos="zoom-in">
+       <div class="designer-header">
+          <img src="assets/images/designer-img/Pfp-Mladen-C.jpg" alt="" class="designer-avatar">
+             <span class="designer-name">Mladen C.</span>
+                 <div class="button">
+                 <a href="dsgnrdetails1.html" class="btn-theme">Explore More</a>                     
+                 </div>
+   </div>
+           <div class="designer-image">
+            <img src="assets/images/designer-img/DesignBy-Mladen.jpg" alt="Home Design">
+           </div>
+               <div class="designer-tags">
+                 <span>CONTEMPORARY</span>
+                 <span>MODERN</span>
+                 <span>ECLECTIC</span>
+               </div>
+          </div>
 
-  <!-- Cards -->
-<div class="cards-container" id="designer_container"></div>
+  <!-- Card 2 -->
+    <div class="designer-card col-md-6" data-aos="zoom-in">
+       <div class="designer-header">
+          <img src="assets/images/designer-img/Pfp-Nikki-G.jpeg" alt="" class="designer-avatar">
+             <span class="designer-name">Nikki G..</span>
+                 <div class="button">
+                 <a href="dsgnrdetails2.html" class="btn-theme">Explore More</a>                     
+                 </div>
+   </div>
+           <div class="designer-image">
+            <img src="assets/images/designer-img/DesignBy-Nikki.jpg" alt="Home Design">
+           </div>
+               <div class="designer-tags">
+                 <span>CONTEMPORARY</span>
+                 <span>ECLECTIC</span>
+                 <span>BEACH</span>
+               </div>
+          </div>
+
+  <!-- Card 3 -->
+    <div class="designer-card col-md-6" data-aos="zoom-in">
+       <div class="designer-header">
+          <img src="assets/images/designer-img/Pfp-Lori-Dennis.jpg" alt="" class="designer-avatar">
+             <span class="designer-name">Lori Dennis</span>
+                 <div class="button">
+                 <a href="dsgnrdetails3.html" class="btn-theme">Explore More</a>                     
+                 </div>
+   </div>
+           <div class="designer-image">
+            <img src="assets/images/designer-img/DesignBy-Lori.jpg" alt="Home Design">
+           </div>
+               <div class="designer-tags">
+                 <span>CONTEMPORARY</span>
+                 <span>TRANSITIONAL</span>
+                 <span>BEACH</span>
+               </div>
+          </div>
+
+  <!-- Card 4 -->
+    <div class="designer-card col-md-6" data-aos="zoom-in">
+       <div class="designer-header">
+          <img src="assets/images/designer-img/Pfp-Meric-S.jpg" alt="" class="designer-avatar">
+             <span class="designer-name">Meric S.</span>
+                 <div class="button">
+                 <a href="dsgnrdetails4.html" class="btn-theme">Explore More</a>                     
+                 </div>
+   </div>
+           <div class="designer-image">
+            <img src="assets/images/designer-img/DesignBy-Meric.jpg" alt="Home Design">
+           </div>
+               <div class="designer-tags">
+                 <span>CONTEMPORARY</span>
+                 <span>TRANSITIONAL</span>
+                 <span>MODERN</span>
+               </div>
+          </div>
+
+  <!-- Card 5 -->
+    <div class="designer-card col-md-6" data-aos="zoom-in">
+       <div class="designer-header">
+          <img src="assets/images/designer-img/Pfp-Ahmed-S.jpeg" alt="" class="designer-avatar">
+             <span class="designer-name">Ahmed S..</span>
+                 <div class="button">
+                 <a href="dsgnrdetails5.html" class="btn-theme">Explore More</a>                     
+                 </div>
+   </div>
+           <div class="designer-image">
+            <img src="assets/images/designer-img/DesignBy-Ahmed.png" alt="Home Design">
+           </div>
+               <div class="designer-tags">
+                 <span>CONTEMPORARY</span>
+                 <span>TRANSITIONAL</span>
+                 <span>GLAMOROUS</span>
+               </div>
+          </div>
+
+  <!-- Card 6 -->
+    <div class="designer-card col-md-6" data-aos="zoom-in">
+       <div class="designer-header">
+          <img src="assets/images/designer-img/Pfp-Carrie-F.jpeg" alt="" class="designer-avatar">
+             <span class="designer-name">Carrie F.</span>
+                 <div class="button">
+                 <a href="dsgnrdetails6.html" class="btn-theme">Explore More</a>                     
+                 </div>
+   </div>
+           <div class="designer-image">
+            <img src="assets/images/designer-img/DesignBy-Carrie.jpg" alt="Home Design">
+           </div>
+               <div class="designer-tags">
+                 <span>CONTEMPORARY</span>
+                 <span>TRANSITIONAL</span>
+                 <span>ECLECTIC</span>
+               </div>
+          </div>
+
+</div>
 
   <!-- Footer -->
-   <footer class="footer m-4" style="background:#fff; color:#333; padding:60px 0; font-family:'Raleway', sans-serif; border-top:3px solid #52001A;">
-  <div class="container">
-    <div class="row gy-5">
+   <footer style="background:#fff; color:#542001; padding: 50px 0; font-family:'Poppins', sans-serif; border-top:3px solid #52001A; font-size:14px; margin-top: 20px;">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Logo & About -->
+        <div class="col-lg-4 col-md-6">
+          <h4 style="color:#52001A; font-weight:bold; font-size:18px;">HomeStyler</h4>
+          <p style="line-height:1.7; font-size:13px;">
+            HomeStyler brings you premium furniture, decor, and home solutions with unmatched quality and style.
+            From modern designs to timeless classics, we help you create a space you'll love.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="fs-6" style="color:#542001;"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
 
-      <!-- Logo & About -->
-      <div class="col-lg-4 col-md-6">
-        <h4 style="color:#52001A; font-weight:bold;">HomeStyler</h4>
-        <p style="line-height:1.8;">
-          HomeStyler brings you premium furniture, decor, and home solutions with unmatched quality and style.
-          From modern designs to timeless classics, we help you create a space you'll love.
-        </p>
-        <div class="d-flex gap-3 mt-3">
-          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 style="color:#52001A; font-size:16px;">Quick Links</h5>
+          <ul class="list-unstyled" style="line-height:2; font-size:13px;">
+            <li><a href="index.html" class="text-decoration-none" style="color:#542001;">Home</a></li>
+            <li><a href="about.html" class="text-decoration-none" style="color:#542001;">About Us</a></li>
+            <li><a href="contact.html" class="text-decoration-none" style="color:#542001;">Contact</a></li>
+            <li><a href="faq.html" class="text-decoration-none" style="color:#542001;">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-6">
+          <h5 style="color:#52001A; font-size:16px;">Shop by Category</h5>
+          <ul class="list-unstyled" style="line-height:2; font-size:13px;">
+            <li><a href="product.html?category=furniture" class="text-decoration-none" style="color:#542001;">Furniture</a></li>
+            <li><a href="product.html?category=lighting" class="text-decoration-none" style="color:#542001;">Lighting</a></li>
+            <li><a href="product.html?category=decor" class="text-decoration-none" style="color:#542001;">Decor</a></li>
+            <li><a href="product.html?category=kitchen" class="text-decoration-none" style="color:#542001;">Kitchen</a></li>
+            <li><a href="product.html?category=bathroom" class="text-decoration-none" style="color:#542001;">Bathroom</a></li>
+            <li><a href="product.html?category=flooring" class="text-decoration-none" style="color:#542001;">Flooring</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h5 style="color:#52001A; font-size:16px;">Newsletter</h5>
+          <p style="font-size:13px;">Subscribe to get special offers and home styling tips.</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control border-dark" placeholder="Your email" style="font-size:13px;" />
+              <button class="btn" style="background:#52001A; color:white; font-size:13px;" type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6">
-        <h5 style="color:#52001A;">Quick Links</h5>
-        <ul class="list-unstyled" style="line-height:2;">
-          <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-          <li><a href="about.html" class="text-dark text-decoration-none">About Us</a></li>
-          <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
-          <li><a href="faq.html" class="text-dark text-decoration-none">FAQs</a></li>
-        </ul>
+      <hr style="margin:30px 0; border-color:#ccc;" />
+      <!-- Bottom -->
+      <div class="text-center" style="font-size:12px; color:#542001;">
+        &copy; 2025 <strong style="color:#52001A;">HomeStyler</strong>. All Rights Reserved.
       </div>
-
-      <!-- Categories -->
-      <div class="col-lg-3 col-md-6">
-        <h5 style="color:#52001A;">Shop by Category</h5>
-        <ul class="list-unstyled" style="line-height:2;">
-          <li><a href="product.html?category=furniture" class="text-dark text-decoration-none">Furniture</a></li>
-          <li><a href="product.html?category=lighting" class="text-dark text-decoration-none">Lighting</a></li>
-          <li><a href="product.html?category=decor" class="text-dark text-decoration-none">Decor</a></li>
-          <li><a href="product.html?category=kitchen" class="text-dark text-decoration-none">Kitchen</a></li>
-          <li><a href="product.html?category=bathroom" class="text-dark text-decoration-none">Bathroom</a></li>
-          <li><a href="product.html?category=flooring" class="text-dark text-decoration-none">Flooring</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-lg-3 col-md-6">
-        <h5 style="color:#52001A;">Newsletter</h5>
-        <p>Subscribe to get special offers and home styling tips.</p>
-        <form>
-          <div class="input-group">
-            <input type="email" class="form-control border-dark" placeholder="Your email">
-            <button class="btn" style="background:#52001A; color:white;" type="submit">Subscribe</button>
-          </div>
-        </form>
-      </div>
-
     </div>
-
-    <hr style="margin:40px 0; border-color:#ccc;">
-
-    <!-- Bottom -->
-    <div class="text-center" style="font-size:14px; color:#666;">
-      &copy; 2025 <strong style="color:#52001A;">HomeStyler</strong>. All Rights Reserved.
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
 
   <!-- Bootstrap Bundle with Popper.js -->
@@ -262,7 +353,5 @@ footer .btn:hover {
     once: true      // animation ek baar chale page load pe
   });
 </script>
-<script src="assets/JS/designer.js/dsgnr.js"></script>
-<script src="assets/JS/designer.js/dsgnrdetail.js"></script>
 
 </html>
