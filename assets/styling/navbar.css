@@ -1,6 +1,7 @@
-
 .navbar,
-.navbar * {
+.nav-bar,
+.navbar * ,
+.nav-bar * {
   font-family: 'Poppins', sans-serif !important;
 }
 
